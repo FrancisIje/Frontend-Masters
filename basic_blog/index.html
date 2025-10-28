@@ -1,32 +1,145 @@
+<style>
+  .jc-sb {
+    justify-content: space-between;
+  }
+
+  .jc-center {
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .nav-item {
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+  }
+  .nav-item:hover {
+    color: cadetblue;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .blog-post {
+    padding: 24px;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 5px solid lightgray;
+    border-radius: 32px;
+  }
+
+  .blog-pic {
+    aspect-ratio: 2.5;
+    width: 60%;
+
+    border-radius: 16px;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic blog</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <section class="navigation">
-    <div class="nav">
-        <nav>
-            <a href="./index.html",>Home</a>
+      <div class="nav">
+        <nav class="jc-center">
+          <a class="nav-item" href="./index.html">Home</a>
 
-            <a href="./about.html",>About</a>
+          <a class="nav-item" href="./about.html">About</a>
+          <a class="nav-item" href="./about.html">Favourites</a>
+
+          <a class="nav-item" href="./about.html">Profile</a>
+          <a class="nav-item" href="./about.html">Settings</a>
         </nav>
-    </div>
+      </div>
     </section>
-    <div class="blog-post">
-        <img class="blog-pic" src="https://images.unsplash.com/photo-1761405378292-30f64ad6f60b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600", alt="fine-woman"/>
-        <tr>
-            <h1 class="title">Beautiful girl</h1>
-            <h3 class="date">26/10/2025</h3>
-        </tr>
+    <section class="content jc-center">
+      <div class="blog-post">
+        <img
+          class="blog-pic jc-center"
+          src="https://images.unsplash.com/photo-1761405378292-30f64ad6f60b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
+          alt="fine-woman"
+        />
+
+        <h1 class="title">Beautiful girl</h1>
+        <h3 class="date">26/10/2025</h3>
+
         <h3 class="author">Francis Ijenebe</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, nulla!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel a ducimus porro. Voluptate repellat reiciendis porro, eius expedita placeat, fugiat necessitatibus aut aliquam, blanditiis ratione doloremque quasi cupiditate aspernatur beatae!</p>
-    </div>
-    
-</body>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
+          nulla!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel a
+          ducimus porro. Voluptate repellat reiciendis porro, eius expedita
+          placeat, fugiat necessitatibus aut aliquam, blanditiis ratione
+          doloremque quasi cupiditate aspernatur beatae!
+        </p>
+      </div>
+      <div class="blog-post">
+        <img
+          class="blog-pic jc-center"
+          src="https://images.unsplash.com/photo-1761405378292-30f64ad6f60b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
+          alt="fine-woman"
+        />
+
+        <h1 class="title">Beautiful girl</h1>
+        <h3 class="date">26/10/2025</h3>
+
+        <h3 class="author">Francis Ijenebe</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
+          nulla!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel a
+          ducimus porro. Voluptate repellat reiciendis porro, eius expedita
+          placeat, fugiat necessitatibus aut aliquam, blanditiis ratione
+          doloremque quasi cupiditate aspernatur beatae!
+        </p>
+      </div>
+      <div class="blog-post">
+        <img
+          class="blog-pic jc-center"
+          src="https://images.unsplash.com/photo-1761405378292-30f64ad6f60b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
+          alt="fine-woman"
+        />
+
+        <h1 class="title">Beautiful girl</h1>
+        <h3 class="date">26/10/2025</h3>
+
+        <h3 class="author">Francis Ijenebe</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
+          nulla!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel a
+          ducimus porro. Voluptate repellat reiciendis porro, eius expedita
+          placeat, fugiat necessitatibus aut aliquam, blanditiis ratione
+          doloremque quasi cupiditate aspernatur beatae!
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
