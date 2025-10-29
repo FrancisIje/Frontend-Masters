@@ -1,4 +1,27 @@
 <style>
+  @keyframes shake {
+    to {
+      transform: translateX(5%);
+    }
+    /* 0%,
+    50% {
+      transform: translateX(0);
+    }
+    52% {
+      transform: translateX(-6px);
+    }
+    56% {
+      transform: translateX(6px);
+    }
+    60% {
+      transform: translateX(-6px);
+    }
+    64%,
+    100% {
+      transform: translateX(0);
+    } */
+  }
+
   .jc-sb {
     justify-content: space-between;
   }
@@ -18,9 +41,14 @@
     color: black;
     margin: 20px;
     text-decoration: none;
+    /* position: absolute; */
   }
   .nav-item:hover {
     color: cadetblue;
+    display: inline-block;
+    right: 0px;
+
+    animation: shake 0.3s infinite linear alternate;
   }
 
   .content {
