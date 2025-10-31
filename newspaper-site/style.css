@@ -1,0 +1,123 @@
+h1 {
+  font-family: "lavishly", sans-serif;
+  font-size: 52;
+  justify-self: center;
+  margin: 16px;
+}
+
+body {
+  font-family: "funnelSans", serif;
+}
+
+nav {
+  display: flex;
+  /* width: 100%; */
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: center;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  /* border-left: 2px solid black; */
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.content-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  justify-content: start;
+  outline: 1px solid black;
+  padding: 8px;
+  grid-area: content-one;
+}
+
+.content-two {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+  outline: 1px solid black;
+  grid-area: content-two;
+  padding: 8px;
+}
+
+.content-three {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+  outline: 1px solid black;
+  grid-area: content-three;
+  padding: 8px;
+}
+
+.content-four {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+  outline: 1px solid black;
+  grid-area: content-four;
+  padding: 8px;
+}
+
+.content-five {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+  outline: 1px solid black;
+  grid-area: content-five;
+  padding: 8px;
+}
+
+.content-image {
+  height: 200px;
+  width: 200px;
+}
+
+.content {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-areas:
+    "content-one content-two content-three"
+    "content-four content-five content-five";
+
+  border: 2px solid black;
+
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@font-face {
+  font-family: "lavishly";
+  src: url(./assets/LavishlyYours-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "funnelSans";
+  src: url(./assets/FunnelSans-VariableFont_wght.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
