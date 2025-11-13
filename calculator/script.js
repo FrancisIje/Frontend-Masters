@@ -5,10 +5,6 @@ const button = document.querySelectorAll("button");
 const logicDisplay = document.querySelector(".logic-color");
 const answerDisplay = document.querySelector(".answer");
 
-// button.addEventListener("click", function (){
-//     console.log(selectedNum);
-// } );
-
 console.log();
 
 for(let i = 0;i<button.length; i++){
@@ -30,7 +26,7 @@ for(let i = 0;i<button.length; i++){
          logicDisplay.innerHTML=`${firstNumber}`;
         console.log("first number = "+ firstNumber );
         console.log("firstnum type " + typeof firstNumber);
-        // alert("first number = "+ firstNumber );
+        
 
     }
 
@@ -40,7 +36,7 @@ for(let i = 0;i<button.length; i++){
         logicDisplay.innerHTML= logicDisplay.innerHTML + secondNumber.toString();
         console.log("second number = "+ secondNumber );
         console.log("secondnum type " + typeof secondNumber);
-        // alert("second number = "+ secondNumber );
+        
 
     }
 
@@ -48,7 +44,7 @@ for(let i = 0;i<button.length; i++){
         operator= indButton.innerText;
         logicDisplay.innerHTML= logicDisplay.innerHTML + operator;
         console.log("operator = "+ operator );
-        // alert("operator = "+ operator );
+        
     }
 
     if (indButton.classList.contains("equals")) {
